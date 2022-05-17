@@ -1,3 +1,6 @@
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
 signUpButton.addEventListener('click', () => {
 	container.classList.add("right-panel-active");
@@ -9,7 +12,7 @@ signInButton.addEventListener('click', () => {
 
 function formValidation() { 
 	const name = document.getElementById("name");
-    
+    let email = document.getElementById("email");
     const password = document.getElementById("password");
 
 	if (name.value.length < 2 || name.value.length > 20) {
