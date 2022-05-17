@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sign In</title>
   <link rel="stylesheet" href="index.css" >
   
 </head>
@@ -22,10 +22,10 @@
           <a href="https://www.google.com/" class="social"><img src="fbs2.png" ></a>
         </div>
         <span> use your email for registration</span>
-        <input type="text" placeholder="Name" class="input1" />
-        <input type="email" placeholder="Email" class="input1" />
-        <input type="password" placeholder="Password" class="input1" />
-        <button>Sign Up</button>
+        <input type="text" placeholder="Name" class="input1" id = "name"/><span id="name"></span>
+        <input type="email" placeholder="Email" class="input1" id = "email" />
+        <input type="password" placeholder="Password" class="input1" id = "password"/>
+        <button onclick="return formValidation()">Sign Up</button>
       </form>
     </div>
     <div class="form-container sign-in-container">
@@ -37,10 +37,10 @@
           <a href="https://www.google.com/" class="social"><img src="fbs2.png" ></a>
         </div>
         <span>or use your account</span>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <input type="email" placeholder="Email" id="email" />
+        <input type="password" placeholder="Password" id="password1" />
         <a href="#">Forgot your password?</a>
-        <button>Sign In</button>
+        <button id="submit" onclick="return formValidation1()" >Sign In</button>
       </form>
     </div>
     <div class="overlay-container">
@@ -48,12 +48,12 @@
         <div class="overlay-panel overlay-left">
           <h1>Welcome Back!</h1>
           <p>To keep connected with us please login with your personal info</p>
-          <button class="ghost" id="signIn">Sign In</button>
+          <button class="ghost" id="signIn" >Sign In</button>
         </div>
         <div class="overlay-panel overlay-right">
           <h1>Hello, Friend!</h1>
           <p>Enter your personal details and start journey with us</p>
-          <button class="ghost" id="signUp">Sign Up</button>
+          <button class="ghost" id="signUp" >Sign Up</button>
         </div>
       </div>
     </div>
